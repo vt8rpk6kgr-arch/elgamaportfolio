@@ -309,7 +309,13 @@
     }
   }
 
-  window.addEventListener('load', initPortfolioVideos);
+  window.addEventListener('load', () => {
+    initPortfolioVideos();
+    const aboutVideo = document.querySelector('.about-image video');
+    if (aboutVideo) {
+      aboutVideo.play().catch(() => {});
+    }
+  });
 
   /**
    * Category Show All button filter trigger
