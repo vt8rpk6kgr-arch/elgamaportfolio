@@ -1138,14 +1138,48 @@ section,
 .portfolio .portfolio-card .portfolio-image {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
+  background-color: #000;
 }
 
-.portfolio .portfolio-card .portfolio-image img {
+.portfolio .portfolio-card.reel-card .portfolio-image {
+  aspect-ratio: 9/16;
+}
+
+.portfolio .portfolio-card.photo-card .portfolio-image {
+  aspect-ratio: 3/4;
+}
+
+.portfolio .portfolio-card .portfolio-image img,
+.portfolio .portfolio-card .portfolio-image video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.6s ease-in-out;
+}
+
+.portfolio .portfolio-card .vimeo-embed-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.portfolio .portfolio-card.active-preview .vimeo-embed-container {
+  opacity: 1;
+}
+
+.portfolio .portfolio-card .vimeo-embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
 }
 
 .portfolio .portfolio-card .portfolio-overlay {
@@ -1219,6 +1253,38 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 0;
   line-height: 1.6;
+}
+
+.portfolio .show-category-all {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.portfolio .show-category-all:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+@media (min-width: 992px) {
+  .portfolio .portfolio-item.portfolio-category-header {
+    width: 100% !important;
+  }
+  .portfolio .portfolio-item.filter-promo,
+  .portfolio .portfolio-item.filter-wedding {
+    width: 50%;
+  }
+  .portfolio .portfolio-item.filter-reels,
+  .portfolio .portfolio-item.filter-photo {
+    width: 33.333333%;
+  }
 }
 
 @media (max-width: 768px) {

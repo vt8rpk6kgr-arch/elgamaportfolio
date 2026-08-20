@@ -57,23 +57,6 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="#contact">Contact</a></li>
           <li class="d-xl-none mt-4 pt-3 border-top d-flex justify-content-center gap-3">
             <a href="#" style="padding:0; width:auto;"><i class="bi bi-twitter-x"></i></a>
@@ -84,13 +67,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
 
     </div>
   </header>
@@ -154,7 +130,10 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/about-profile.jpg" alt="About Me" class="img-fluid rounded-4 shadow" style="object-fit: cover; aspect-ratio: 1/1; width: 100%;">
+              <video autoplay loop muted playsinline class="img-fluid rounded-4 shadow" style="object-fit: cover; aspect-ratio: 1/1; width: 100%;">
+                <source src="assets/img/IMG_3391.MOV" type="video/mp4">
+                <source src="assets/img/IMG_3391.MOV" type="video/quicktime">
+              </video>
             </div>
           </div>
 
@@ -194,7 +173,7 @@
                   <div class="col-6">
                     <div class="info-item">
                       <span class="label">Email</span>
-                      <span class="value">gamy.gamy1717@gmail.com</span>
+                      <span class="value">jamy.jamy1717@gmail.com</span>
                     </div>
                   </div>
 
@@ -374,146 +353,1300 @@
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+        <p>Featured commercial promos, wedding highlights, and short-form reels.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter=".filter-featured" data-layout="fitRows" data-sort="original-order">
 
           <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-featured" class="filter-active">All Work</li>
+              <li data-filter=".filter-promo">Promo & Commercials</li>
               <li data-filter=".filter-wedding">Weddings</li>
-              <li data-filter=".filter-product">Products</li>
-              <li data-filter=".filter-reels">Reels & Social Media</li>
-              <li data-filter=".filter-ads">Advertisements</li>
+              <li data-filter=".filter-reels">Reels & Short Video</li>
+              <li data-filter=".filter-photo">Photos</li>
             </ul>
           </div>
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-wedding">
-              <div class="portfolio-card">
+            <!-- Promo Section Header -->
+            <div class="col-12 portfolio-item isotope-item filter-featured filter-promo portfolio-category-header">
+              <div class="d-flex align-items-center justify-content-between my-3 border-bottom pb-2">
+                <h3 class="m-0 fw-bold" style="color: var(--heading-color); font-size: 1.5rem;"><i class="bi bi-camera-reels me-2" style="color: var(--accent-color);"></i>Promo & Commercials</h3>
+                <button class="btn show-category-all" data-filter-target=".filter-promo">Show All Promos <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            <!-- Promo & Ads Item 1 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219695309">
                 <div class="portfolio-image">
-                  <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                  </video>
+                  <img src="https://i.vimeocdn.com/video/2191958768-b66902689b0c0218707a77fa65475d2c5277768cb30f49bdb3bd1c8a1ea5eb25-d_640x360" class="portfolio-thumb img-fluid" alt="Promo Commercial 1" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="glightbox preview-link" data-gallery="portfolio-gallery-wedding"><i class="bi bi-play-circle"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219695309" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Promo Commercial 1"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Promo Commercial 1</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo & Ads Item 2 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219364879">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191548977-b9311b7b7a0e261d8244a80ffa5ff8d39c6fecebc70b7ceb99fee0e56973082b-d_640x360" class="portfolio-thumb img-fluid" alt="Commercial Intro" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219364879" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Commercial Intro"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Commercial Intro</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo & Ads Item 3 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219362913">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191543476-0d7c7ae7ea03f78e2d7830f872f8745b8984d4c384735b06647a8984246bb3c4-d_640x360" class="portfolio-thumb img-fluid" alt="Brand Showcase" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219362913" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Brand Showcase"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Brand Showcase</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo & Ads Item 4 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219362910">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191547709-50e63375bda9d002a72732ae0d7defd6c38590b212162d9db2f25d181088836d-d_640x360" class="portfolio-thumb img-fluid" alt="Creative Promo" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219362910" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Creative Promo"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Creative Promo</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo & Ads Item 5 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219362911">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191544882-52fc8d2e9fffaa7c4721183d620612540a0b8a6297ac500d70693868639f36a5-d_640x360" class="portfolio-thumb img-fluid" alt="Commercial Teaser" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219362911" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Commercial Teaser"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Commercial Teaser</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo & Ads Item 6 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-promo">
+              <div class="portfolio-card video-card" data-vimeo-id="1219361825">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540863-f2b2d59f1a092a2a4619a4bda2aa3788939a9d379105b267b5fc91ac36fdb363-d_640x360" class="portfolio-thumb img-fluid" alt="Event Advert" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361825" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Event Advert"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Promo & Ads</span>
+                  <h3>Event Advert</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weddings Section Header -->
+            <div class="col-12 portfolio-item isotope-item filter-featured filter-wedding portfolio-category-header">
+              <div class="d-flex align-items-center justify-content-between my-3 border-bottom pb-2">
+                <h3 class="m-0 fw-bold" style="color: var(--heading-color); font-size: 1.5rem;"><i class="bi bi-heart-fill me-2" style="color: var(--accent-color);"></i>Weddings & Celebrations</h3>
+                <button class="btn show-category-all" data-filter-target=".filter-wedding">Show All Weddings <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            <!-- Weddings Item 1 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-wedding">
+              <div class="portfolio-card video-card" data-vimeo-id="1219709419">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191977601-1b53e3253d41cb45165bf6551a690fcee775c9c055776f76f712144d96f8e165-d_640x360" class="portfolio-thumb img-fluid" alt="Wedding Story 1" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219709419" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Wedding Story 1"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Weddings</span>
-                  <h3>Cinematic Wedding Highlight</h3>
-                  <p>Beautiful moments captured elegantly.</p>
+                  <h3>Wedding Story 1</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-card">
+            <!-- Weddings Item 2 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-wedding">
+              <div class="portfolio-card video-card" data-vimeo-id="1219708270">
                 <div class="portfolio-image">
-                  <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                  </video>
+                  <img src="https://i.vimeocdn.com/video/2191974691-157e1b1a45c14eeba7617ca041437bcb1bba3d3fcf04c544670d8a180a1b30a5-d_640x360" class="portfolio-thumb img-fluid" alt="Cinematic Highlights" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="glightbox preview-link" data-gallery="portfolio-gallery-product"><i class="bi bi-play-circle"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219708270" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Cinematic Highlights"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Products</span>
-                  <h3>Creative Brand Showcase</h3>
-                  <p>High-end product videography and photography.</p>
+                  <span class="category">Weddings</span>
+                  <h3>Cinematic Highlights</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-reels">
-              <div class="portfolio-card">
+            <!-- Weddings Item 3 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-wedding">
+              <div class="portfolio-card video-card" data-vimeo-id="1219708194">
                 <div class="portfolio-image">
-                  <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; aspect-ratio: 9/16; object-fit: cover;">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                  </video>
+                  <img src="https://i.vimeocdn.com/video/2191974647-6ed8af6f67f1fb1a013e5b1096a9ff78b2b629b46a9913b9e2660db964919e57-d_640x360" class="portfolio-thumb img-fluid" alt="Bridal Teaser" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="glightbox preview-link" data-gallery="portfolio-gallery-reels"><i class="bi bi-play-circle"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219708194" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Bridal Teaser"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Reels & Social Media</span>
-                  <h3>Instagram Reel Content</h3>
-                  <p>Engaging short-form video for social engagement.</p>
+                  <span class="category">Weddings</span>
+                  <h3>Bridal Teaser</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ads">
-              <div class="portfolio-card">
+            <!-- Weddings Item 4 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-featured filter-wedding">
+              <div class="portfolio-card video-card" data-vimeo-id="1219709418">
                 <div class="portfolio-image">
-                  <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                  </video>
+                  <img src="https://i.vimeocdn.com/video/2191977182-08d738087e935557c56569ee1ec0ad808e6f64015a254b0c5d41c4feb49eb50e-d_640x360" class="portfolio-thumb img-fluid" alt="Wedding Ceremony" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="glightbox preview-link" data-gallery="portfolio-gallery-ads"><i class="bi bi-play-circle"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219709418" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Wedding Ceremony"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Advertisements</span>
-                  <h3>Commercial Campaign</h3>
-                  <p>Full production and color grading for brand ads.</p>
+                  <span class="category">Weddings</span>
+                  <h3>Wedding Ceremony</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
+            <!-- Weddings Item 5 -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-wedding">
+              <div class="portfolio-card video-card" data-vimeo-id="1219709417">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="https://i.vimeocdn.com/video/2191977904-a3c58fb1dd9f78dddc9d9ea2d283e82675a652f3be779be0f7b17bdd099a3bc7-d_640x360" class="portfolio-thumb img-fluid" alt="Wedding Celebration" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219709417" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Wedding Celebration"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>E-commerce Platform</h3>
-                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <span class="category">Weddings</span>
+                  <h3>Wedding Celebration</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
+            <!-- Reels Section Header -->
+            <div class="col-12 portfolio-item isotope-item filter-featured filter-reels portfolio-category-header">
+              <div class="d-flex align-items-center justify-content-between my-3 border-bottom pb-2">
+                <h3 class="m-0 fw-bold" style="color: var(--heading-color); font-size: 1.5rem;"><i class="bi bi-phone me-2" style="color: var(--accent-color);"></i>Reels & Short Videos</h3>
+                <button class="btn show-category-all" data-filter-target=".filter-reels">Show All Reels <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            <!-- Reels & Shorts Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219360475">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="https://i.vimeocdn.com/video/2191539054-461c7baad2449a2142ff17c2b68c02b9503db81699051331921e723c34754e41-d_640x960" class="portfolio-thumb img-fluid" alt="Social Reel 1" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="https://vimeo.com/1219360475" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Social Reel 1"><i class="bi bi-play-circle-fill"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Graphics</span>
-                  <h3>Digital Art Collection</h3>
-                  <p>Cras mattis consectetur purus sit amet fermentum.</p>
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Social Reel 1</h3>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Reels & Shorts Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361761">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540784-bb3c29c8db644ede6135ff12392d12542bb8ce597da68651c341d94d4ee06119-d_640x960" class="portfolio-thumb img-fluid" alt="Urban Reel Edit" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361761" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Urban Reel Edit"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Urban Reel Edit</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361550">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540368-d0fb5ee90e9850ad0ac625b2947dc0f832513138b13d1ebc8ec395507b5995a4-d_640x960" class="portfolio-thumb img-fluid" alt="Dynamic Short Reel" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361550" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Dynamic Short Reel"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Dynamic Short Reel</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361722">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540726-ef2e2737684521eca5d73e2b5e3273e6705d90bf58b047f1e72243add84d3af7-d_640x960" class="portfolio-thumb img-fluid" alt="Lifestyle Short" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361722" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Lifestyle Short"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Lifestyle Short</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361552">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540414-b9382c60c0b0bed11c909c2b1e6c8f06288dc752d888a768d426113880036771-d_640x960" class="portfolio-thumb img-fluid" alt="Social Media Cut" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361552" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Social Media Cut"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Social Media Cut</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361249">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540027-624a58fce6a948c435353cdc1fce4d862854b7cf6720751e7b8831badd58a1cc-d_640x960" class="portfolio-thumb img-fluid" alt="Fast Pace Reel" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361249" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Fast Pace Reel"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Fast Pace Reel</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 7 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219359576">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191537825-c018f2e1cb1d71caf5e9f8e9c11ac033d1d96234b786e4111bcab855b4f7ccba-d_640x960" class="portfolio-thumb img-fluid" alt="Fashion Reel Edit" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219359576" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Fashion Reel Edit"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Fashion Reel Edit</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 8 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219359574">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191538512-4c056a8d8923013621404891c1779587d522116f1a513fb7cd8bc46eed6f0c9b-d_640x960" class="portfolio-thumb img-fluid" alt="Aesthetic Short" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219359574" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Aesthetic Short"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Aesthetic Short</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 9 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219359721">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191537934-8f9a874b78ddbdc9b3d0cb651ee20e483e6d3980499f4fe05fe939d88ade6ffe-d_640x960" class="portfolio-thumb img-fluid" alt="Creative Transitions" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219359721" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Creative Transitions"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Creative Transitions</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 10 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219359823">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191538570-fd9cbb4de028d067e766f571f786f474ac10b3f8d54742f70e8caf5f3246c6f2-d_640x960" class="portfolio-thumb img-fluid" alt="Vibe Reel Content" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219359823" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Vibe Reel Content"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Vibe Reel Content</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 11 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361252">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191539950-8098c82b8e758db11146db0ce25d0c753b201699ec2ae464d5cd025c6dfc0823-d_640x960" class="portfolio-thumb img-fluid" alt="Short-Form Reel 11" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361252" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Short-Form Reel 11"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Short-Form Reel 11</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reels & Shorts Item 12 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+              <div class="portfolio-card video-card reel-card" data-vimeo-id="1219361251">
+                <div class="portfolio-image">
+                  <img src="https://i.vimeocdn.com/video/2191540040-eb04859668726fc78ccaff9da979583832e908df6631ffb2d0d60382ac842f69-d_640x960" class="portfolio-thumb img-fluid" alt="Short-Form Reel 12" loading="lazy">
+                  <div class="vimeo-embed-container"></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://vimeo.com/1219361251" class="glightbox preview-link" data-gallery="portfolio-gallery" title="Short-Form Reel 12"><i class="bi bi-play-circle-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Reels & Shorts</span>
+                  <h3>Short-Form Reel 12</h3>
+                </div>
+              </div>
+            </div><!-- End Reels Item 12 -->
+
+            <!-- Photo Section Header -->
+            <div class="col-12 portfolio-item isotope-item filter-photo portfolio-category-header">
+              <div class="d-flex align-items-center justify-content-between my-3 border-bottom pb-2">
+                <h3 class="m-0 fw-bold" style="color: var(--heading-color); font-size: 1.5rem;"><i class="bi bi-camera me-2" style="color: var(--accent-color);"></i>Photography Showcase</h3>
+                <button class="btn show-category-all" data-filter-target=".filter-photo">Show All Photos <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            <!-- Photo Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0486.jpg" class="img-fluid" alt="Wedding Photography 1" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0486.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 1"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 1</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0783.jpg" class="img-fluid" alt="Wedding Photography 2" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0783.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 2"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 2</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0797.jpg" class="img-fluid" alt="Wedding Photography 3" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0797.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 3"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 3</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0869.jpg" class="img-fluid" alt="Wedding Photography 4" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0869.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 4"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 4</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0911.jpg" class="img-fluid" alt="Wedding Photography 5" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0911.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 5"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 5</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0915.jpg" class="img-fluid" alt="Wedding Photography 6" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0915.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 6"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 6</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 7 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A0927.jpg" class="img-fluid" alt="Wedding Photography 7" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A0927.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 7"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 7</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 8 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A1043.jpg" class="img-fluid" alt="Wedding Photography 8" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A1043.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 8"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 8</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 9 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A1045.jpg" class="img-fluid" alt="Wedding Photography 9" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A1045.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 9"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 9</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 10 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A1051.jpg" class="img-fluid" alt="Wedding Photography 10" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A1051.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 10"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 10</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 11 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A1070.jpg" class="img-fluid" alt="Wedding Photography 11" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A1070.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 11"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 11</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 12 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A1072.jpg" class="img-fluid" alt="Wedding Photography 12" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A1072.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 12"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 12</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 13 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9060.jpg" class="img-fluid" alt="Wedding Photography 13" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9060.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 13"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 13</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 14 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9091.jpg" class="img-fluid" alt="Wedding Photography 14" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9091.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 14"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 14</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 15 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9127.jpg" class="img-fluid" alt="Wedding Photography 15" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9127.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 15"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 15</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 16 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9144.jpg" class="img-fluid" alt="Wedding Photography 16" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9144.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 16"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 16</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 17 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9160.jpg" class="img-fluid" alt="Wedding Photography 17" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9160.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 17"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 17</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 18 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9188.jpg" class="img-fluid" alt="Wedding Photography 18" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9188.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 18"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 18</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 19 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9200.jpg" class="img-fluid" alt="Wedding Photography 19" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9200.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 19"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 19</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 20 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/014A9251.jpg" class="img-fluid" alt="Wedding Photography 20" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/014A9251.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 20"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 20</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 21 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM (27).jpg" class="img-fluid" alt="Wedding Photography 21" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM (27).jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 21"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 21</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 22 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM (40).jpg" class="img-fluid" alt="Wedding Photography 22" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM (40).jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 22"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 22</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 23 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM (50).jpg" class="img-fluid" alt="Wedding Photography 23" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM (50).jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 23"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 23</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 24 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM (51).jpg" class="img-fluid" alt="Wedding Photography 24" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM (51).jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 24"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 24</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 25 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0366.jpg" class="img-fluid" alt="Wedding Photography 25" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0366.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 25"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 25</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 26 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0374.jpg" class="img-fluid" alt="Wedding Photography 26" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0374.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 26"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 26</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 27 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0463.jpg" class="img-fluid" alt="Wedding Photography 27" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0463.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 27"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 27</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 28 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0464.jpg" class="img-fluid" alt="Wedding Photography 28" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0464.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 28"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 28</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 29 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0468.jpg" class="img-fluid" alt="Wedding Photography 29" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0468.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 29"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 29</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 30 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_0476.jpg" class="img-fluid" alt="Wedding Photography 30" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_0476.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 30"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 30</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 31 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_5238.jpg" class="img-fluid" alt="Wedding Photography 31" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_5238.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 31"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 31</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 32 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_5240.jpg" class="img-fluid" alt="Wedding Photography 32" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_5240.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 32"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 32</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 33 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_6946.jpg" class="img-fluid" alt="Wedding Photography 33" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_6946.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 33"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 33</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 34 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_6952.jpg" class="img-fluid" alt="Wedding Photography 34" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_6952.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 34"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 34</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 35 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_6956.jpg" class="img-fluid" alt="Wedding Photography 35" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_6956.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 35"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 35</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 36 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7005.jpg" class="img-fluid" alt="Wedding Photography 36" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7005.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 36"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 36</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 37 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7094.jpg" class="img-fluid" alt="Wedding Photography 37" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7094.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 37"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 37</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 38 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7100.jpg" class="img-fluid" alt="Wedding Photography 38" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7100.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 38"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 38</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 39 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7108.jpg" class="img-fluid" alt="Wedding Photography 39" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7108.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 39"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 39</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 40 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7160.jpg" class="img-fluid" alt="Wedding Photography 40" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7160.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 40"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 40</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 41 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7165.jpg" class="img-fluid" alt="Wedding Photography 41" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7165.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 41"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 41</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 42 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7185.jpg" class="img-fluid" alt="Wedding Photography 42" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7185.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 42"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 42</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 43 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7190.jpg" class="img-fluid" alt="Wedding Photography 43" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7190.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 43"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 43</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 44 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7191.jpg" class="img-fluid" alt="Wedding Photography 44" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7191.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 44"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 44</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Item 45 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <div class="portfolio-card photo-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/thumbs/JAM_7203.jpg" class="img-fluid" alt="Wedding Photography 45" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/thumbs/JAM_7203.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-photo" title="Wedding Photography 45"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Photography</span>
+                  <h3>Wedding Portrait 45</h3>
+                </div>
+              </div>
+            </div>
+
 
           </div><!-- End Portfolio Container -->
 
@@ -604,7 +1737,7 @@
               <div class="contact-info mt-5">
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-envelope-at me-3"></i>
-                  <span>gamy.gamy1717@gmail.com</span>
+                  <span>jamy.jamy1717@gmail.com</span>
                 </div>
 
                 <div class="info-item d-flex mb-3">

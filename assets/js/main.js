@@ -132,7 +132,8 @@
         itemSelector: '.isotope-item',
         layoutMode: layout,
         filter: filter,
-        sortBy: sort
+        sortBy: sort,
+        percentPosition: true
       });
     });
 
@@ -217,8 +218,6 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
-
   /**
    * Init typed.js
    */
@@ -234,5 +233,100 @@
       backDelay: 2000
     });
   }
+
+  /**
+   * Smart Video Autoplay (Desktop Hover & Mobile Scroll for Vimeo & HTML5 Video)
+   */
+  function initPortfolioVideos() {
+    const videoCards = document.querySelectorAll('.portfolio-card.video-card');
+    if (!videoCards.length) return;
+
+    function playCardVideo(card) {
+      const vimeoId = card.getAttribute('data-vimeo-id');
+      const video = card.querySelector('video.hover-video');
+
+      if (vimeoId) {
+        let container = card.querySelector('.vimeo-embed-container');
+        if (container) {
+          if (!container.querySelector('iframe')) {
+            container.innerHTML = `<iframe src="https://player.vimeo.com/video/${vimeoId}?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+          }
+          card.classList.add('active-preview');
+        }
+      } else if (video) {
+        video.play().catch(() => {});
+      }
+    }
+
+    function stopCardVideo(card) {
+      const vimeoId = card.getAttribute('data-vimeo-id');
+      const video = card.querySelector('video.hover-video');
+
+      if (vimeoId) {
+        card.classList.remove('active-preview');
+      } else if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }
+
+    // 1. Desktop Hover Interaction
+    videoCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 991) {
+          playCardVideo(card);
+        }
+      });
+
+      card.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 991) {
+          stopCardVideo(card);
+        }
+      });
+    });
+
+    // 2. Mobile Scroll Interaction (IntersectionObserver)
+    if ('IntersectionObserver' in window) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+      };
+
+      const mobileVideoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (window.innerWidth <= 991) {
+            if (entry.isIntersecting) {
+              playCardVideo(entry.target);
+            } else {
+              stopCardVideo(entry.target);
+            }
+          }
+        });
+      }, observerOptions);
+
+      videoCards.forEach(card => mobileVideoObserver.observe(card));
+    }
+  }
+
+  window.addEventListener('load', initPortfolioVideos);
+
+  /**
+   * Category Show All button filter trigger
+   */
+  document.querySelectorAll('.show-category-all').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetFilter = this.getAttribute('data-filter-target');
+      const filterLi = document.querySelector(`.isotope-filters li[data-filter="${targetFilter}"]`);
+      if (filterLi) {
+        filterLi.click();
+        const portfolioSec = document.querySelector('#portfolio');
+        if (portfolioSec) {
+          portfolioSec.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
 
 })();
